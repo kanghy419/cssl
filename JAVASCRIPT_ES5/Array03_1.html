@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array03_1.html</title>
+</head>
+
+<script>
+  Function getAverage() {
+        // 입력한 학생수 구하기]
+        textBox=document.getElementById('Students');
+        console.log('입력값:%s, textBox.value의 자료형:%s, textBox.value')
+        //학생수 만큼 점수 입력받고 총합 및 평균 구하기
+        //총합 저장용 변수
+        var total=0;
+        for(var i=0; i< parseInt(textBox.value);i++){
+            score[i]=parseInt(prompt(i+1+'번째 점수 입력?'));
+            total += score[i];
+        }
+        var avg = total/score.length;
+        console.log('총점:%d,평균:%s',total,avg);
+    }
+
+    </script>
+
+<body>
+  
+</body>
+</html>
